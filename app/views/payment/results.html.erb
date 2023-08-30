@@ -7,28 +7,28 @@
     APR
   </dt>
   <dd>
-    44.0000%
+    <%= @apr.to_fs(:percentage, { precision: 4 }) %>%
   </dd>
 
   <dt>
     Number of years
   </dt>
   <dd>
-    23
+    <%= @years %>
   </dd>
 
   <dt>
     Principal
   </dt>
   <dd>
-    $222.00
+   <%= @principal.to_fs(:currency, { precision: 2 }) %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $8.14
+    <%= @results.to_fs(:currency, { precision: 2 }) %>
   </dd>
 </dl>
 
